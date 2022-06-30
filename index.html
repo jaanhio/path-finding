@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="module" src="./index.js"></script>
+        <script type="module" src="./route.js"></script>
+        <script type="module" src="./utils.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="./style.css" />
+    </head>
+    <body>
+        <div id="maze-container">
+            <h2>Path finding algorithms</h2>
+            <p>To begin...</p>
+            <ol>
+                <li>Select starting grid. Click on "pick start", select desired grid, then click on "confirm" to confirm selection.</li>
+                <li>Select target grid. Click on "pick target", select desired grid, then click on "confirm" to confirm selection.</li>
+                <li>Choose whether diagonal grid movement is allowed.</li>
+                <li>(optional) Select obstacles. Click on "add obstacles" button, click or mouse down over grid to select obstacles. Click on "confirm" to confirm selection. </li>
+                <li>Select path finding algorithm to observe.</li>
+                <li>To reset route (to test out other algorithms), click on "reset route only" button.</li>
+                <li>To clear obstacles, click on "clear obstacles" button.</li>
+                <li>To reset entire grid (also to create grid of different size), click on "reset grid" button.</li>
+            </ol>
+            <div></div>
+            <div>
+                <label for="rows">Rows:</label>
+                <input type="number" id="rows-input" name="rows" value="100" min="100" max="1000">
+                <label for="cols">Cols:</label>
+                <input type="number" id="cols-input" name="cols" value="100" min="100" max="1000">
+                <button id="reset-btn">reset grid</button>
+            </div>
+            <div>
+                <span>Start coord:</span>
+                <span id="start-coord" type="coord" selected="false">null</span>
+                <button id="start-btn">pick start</button>
+            </div>
+            <div>
+                <span>Target coord:</span>
+                <span id="target-coord" type="coord" selected="false">null</span>
+                <button id="target-btn">pick target</button>
+            </div>
+            <div>
+                <span>Allow diagonal movement:</span>
+                <span id="diagonal-movement">true</span>
+                <button id="toggle-movement-btn">toggle</button>
+            </div>
+            <div>
+                <span>Distance:</span>
+                <span id="route-distance">null</span>
+            </div>
+            <div>
+                <button id="add-obstacle-btn">add obstacles</button>
+                <button id="remove-obstacles-btn">clear obstacles</button>
+            </div>
+            <div>
+                <button id="bfs-btn">bfs</button>
+                <button id="dfs-btn">dfs</button>
+                <button id="dijkstra-btn">dijkstra</button>
+                <button id="greedy-best-btn">greedy best first</button>
+                <button id="astar-btn">a-star</button>
+                <button id="reset-route-btn">reset route only</button>
+            </div>
+            <div id="main">
+            </div>
+        </div>
+        <footer>
+            <a href="https://jaanhio.me">Back to main page</a>
+        </footer>
+    </body>
+</html>

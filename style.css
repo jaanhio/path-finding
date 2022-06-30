@@ -1,0 +1,73 @@
+.grid {
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.grid-hover {
+    background-color: orange;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.grid-start {
+    background-color: greenyellow;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.grid-target {
+    background-color: #4551EE;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.grid-route {
+    background-color: blue;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.grid-search {
+    background-color: teal;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.grid-obstacle {
+    background-color: blueviolet;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+#main {
+    display: grid;
+    gap: 1px;
+    border: solid 0.5px grey;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#maze-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+footer {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
