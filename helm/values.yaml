@@ -1,0 +1,16 @@
+replicaCount: 1
+ingress:
+  enabled: true
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  hosts:
+  - host: "path-finding.jaanhio.me"
+    paths:
+    - path: /
+      pathType: Prefix
+resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+image:
+  tag: "v1.0.0"
